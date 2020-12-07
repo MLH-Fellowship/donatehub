@@ -1,24 +1,24 @@
 {
-  "name": "sprint5",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"./**/*.{js,json}\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "/MLH-Fellowship/sprint5.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MLH-Fellowship/sprint5/issues"
-  },
-  "homepage": "https://github.com/MLH-Fellowship/sprint5#readme",
-  "devDependencies": {
-    "prettier": "^2.2.1"
-  }
+	"name": "sprint5",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "/MLH-Fellowship/sprint5.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MLH-Fellowship/sprint5/issues"
+	},
+	"homepage": "https://github.com/MLH-Fellowship/sprint5#readme",
+	"devDependencies": {
+		"prettier": "^2.2.1"
+	}
 }
