@@ -1,33 +1,32 @@
 /* styles */
 
-.hmpg-container {
+body {
 	background-color: #faebc1;
 	background-image: linear-gradient(to right, #f6d365 0%, #faebc1 100%);
-	height: 100vh;
+}
+
+.hmpg-container {
 	padding: 0;
 	margin: 0;
 }
 
-.hmpg-header {
-	margin: 0;
+.hmpg-header,
+.hmpg-body {
+	margin: 0 150px;
 	padding: 20px 20px;
 	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
 	display: flex;
 	justify-content: space-between;
 }
 
-.hmpg-title {
-	padding: 0 0 0 50px;
-}
-
 .hmpg-title h2 {
-	margin: 25px 0;
+	margin: 30px 0;
 	text-transform: lowercase;
 }
 
 .hmpg-nav-link {
 	padding: 0px;
-	margin: 25px 0;
+	margin: 25px 0 0 0;
 }
 
 .hmpg-nav-link a {
@@ -46,13 +45,14 @@
 }
 
 .hmpg-donate-btn {
-	padding: 5px 50px 5px 0px;
-	margin: 25px 0;
+	padding: 5px;
+	margin: 25px 0 0 0;
 }
 
 .hmpg-donate-btn button {
 	font-family: 'Metropolis-SemiBold', Georgia, 'Times New Roman', Times, serif;
 	text-transform: uppercase;
+	font-size: 1rem;
 	padding: 10px 40px;
 	outline: none;
 	border: none;
@@ -71,6 +71,67 @@
 
 .hmpg-donate-btn button:hover {
 	box-shadow: 0 0 50px #fda085;
+	color: #ffffff;
 	background-position: right center;
 	cursor: pointer;
+}
+
+.hmpg-sub-container {
+	border-radius: 30px;
+	height: 40vh;
+	width: 100%;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #000000;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-image: linear-gradient(
+		to right,
+		#ebb136 0%,
+		#efc437 25%,
+		#edbb2f 75%,
+		#f0c85f 100%
+	);
+}
+
+.hmpg-sub-containers-items {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
+}
+
+.hmpg-sub-containers-items p {
+	padding: 60px 0 0 80px;
+	margin: 0;
+}
+
+.hmpg-sub-containers-items p span {
+	color: #ffffff;
+}
+
+.hmpg-sub-containers-items h2 {
+	padding: 55px 0 0 0;
+	margin: 0;
+	font-size: 2rem;
+}
+
+.hmpg-sorting-options {
+	padding: 60px 80px 0 0;
+	margin: 0;
+}
+
+.hmpg-sorting-options select {
+	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	padding: 2px;
+}
+
+.hmpg-sub-containers-cards {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 80px;
 }
