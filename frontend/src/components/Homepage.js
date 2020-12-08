@@ -1,10 +1,9 @@
-import data from '../data/data';
 import '../styles/homepage.css';
 import shoe from '../images/shoe.png';
 import ItemCard from './common/ItemCard';
 import Nav from './common/Nav';
 
-const Homepage = () => {
+const Homepage = ({ data }) => {
 	return (
 		<div className="hmpg-container">
 			<Nav />

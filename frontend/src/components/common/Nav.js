@@ -1,19 +1,24 @@
 import '../../styles/nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 	return (
 		<div className="nv-header">
-			<div className="nv-title">
-				<h2>donatehub</h2>
-			</div>
+			<Link to="/">
+				<div className="nv-title">
+					<h2>donatehub</h2>
+				</div>
+			</Link>
 			<div className="nv-nav-link">
-				<a href="">Home</a>
-				<a href="">Donate</a>
-				<a href="">About Us</a>
-				<a href="">Contact</a>
+				<Link to="/">Home</Link>
+				<Link to="/donate">Donate</Link>
+				<Link to="/">About Us</Link>
+				<Link to="/">Contact</Link>
 			</div>
 			<div className="nv-donate-btn">
-				<button>donate</button>
+				<Link to="/donate">
+					<button>donate</button>
+				</Link>
 			</div>
 		</div>
 	);
