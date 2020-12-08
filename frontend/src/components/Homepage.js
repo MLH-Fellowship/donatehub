@@ -1,24 +1,13 @@
+import data from '../data/data';
 import '../styles/homepage.css';
 import shoe from '../images/shoe.png';
 import ItemCard from './common/ItemCard';
+import Nav from './common/Nav';
 
 const Homepage = () => {
 	return (
 		<div className="hmpg-container">
-			<div className="hmpg-header">
-				<div className="hmpg-title">
-					<h2>donatehub</h2>
-				</div>
-				<div className="hmpg-nav-link">
-					<a href="">Home</a>
-					<a href="">Donate</a>
-					<a href="">About Us</a>
-					<a href="">Contact</a>
-				</div>
-				<div className="hmpg-donate-btn">
-					<button>donate</button>
-				</div>
-			</div>
+			<Nav />
 			<div className="hmpg-body">
 				<div className="hmpg-sub-container">
 					<div className="hmpg-sub-containers-items">
@@ -35,12 +24,9 @@ const Homepage = () => {
 						</div>
 					</div>
 					<div className="hmpg-sub-containers-cards">
-						<ItemCard img={shoe} itemName="Shoe" />
-						<ItemCard img={shoe} itemName="Shoe" />
-						<ItemCard img={shoe} itemName="Shoe" />
-						<ItemCard img={shoe} itemName="Shoe" />
-						<ItemCard img={shoe} itemName="Shoe" />
-						<ItemCard img={shoe} itemName="Shoe" />
+						{data.map(item => (
+							<ItemCard img={shoe} itemName={item.itemName} />
+						))}
 					</div>
 				</div>
 			</div>

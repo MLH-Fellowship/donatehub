@@ -10,70 +10,12 @@ body {
 	margin: 0;
 }
 
-.hmpg-header,
 .hmpg-body {
 	margin: 0 150px;
 	padding: 20px 20px;
 	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
 	display: flex;
 	justify-content: space-between;
-}
-
-.hmpg-title h2 {
-	margin: 30px 0;
-	text-transform: lowercase;
-}
-
-.hmpg-nav-link {
-	padding: 0px;
-	margin: 25px 0 0 0;
-}
-
-.hmpg-nav-link a {
-	font-family: 'Metropolis-SemiBold', Georgia, 'Times New Roman', Times, serif;
-	font-weight: 600;
-	color: #000000;
-	text-decoration: none;
-	display: inline-block;
-	padding: 10px 10px;
-	font-size: 1rem;
-	transition: all 0.3s;
-}
-
-.hmpg-nav-link a:hover {
-	color: #fa8907;
-}
-
-.hmpg-donate-btn {
-	padding: 5px;
-	margin: 25px 0 0 0;
-}
-
-.hmpg-donate-btn button {
-	font-family: 'Metropolis-SemiBold', Georgia, 'Times New Roman', Times, serif;
-	text-transform: uppercase;
-	font-size: 1rem;
-	padding: 10px 40px;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	transition: 0.5s;
-	background-size: 200% auto;
-	color: #000000;
-	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	background-image: linear-gradient(
-		to right,
-		#f6d365 0%,
-		#fda085 51%,
-		#f6d365 100%
-	);
-}
-
-.hmpg-donate-btn button:hover {
-	box-shadow: 0 0 50px #fda085;
-	color: #ffffff;
-	background-position: right center;
-	cursor: pointer;
 }
 
 .hmpg-sub-container {
