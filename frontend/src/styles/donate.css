@@ -1,0 +1,195 @@
+/* styles */
+
+.dnt-container {
+	padding: 0;
+	margin: 0;
+	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
+}
+
+.dnt-subcontainer {
+	border-radius: 30px;
+	margin: 0 150px 25px 150px;
+	padding: 20px 20px;
+	height: 700px;
+	width: 80%;
+	background-image: linear-gradient(
+		to right,
+		#ebb136 0%,
+		#efc437 25%,
+		#edbb2f 75%,
+		#f0c85f 100%
+	);
+}
+
+.dnt-headlines {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dnt-headlines h2,
+h3,
+h4 {
+	background: linear-gradient(
+		to right,
+		#8a2be2 0%,
+		#9400d3 25%,
+		#9932cc 50%,
+		#8b008b 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.7s;
+}
+
+.dnt-headlines h2:hover,
+h3:hover,
+h4:hover {
+	background: linear-gradient(
+		to right,
+		#8b008b 0%,
+		#9400d3 25%,
+		#9932cc 50%,
+		#8a2be2 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+
+.dnt-headlines h2 {
+	margin: 30px 0 0 10px;
+	font-size: 2rem;
+}
+
+.dnt-headlines h3 {
+	margin: 20px 0;
+	font-size: 1.7rem;
+}
+
+.dnt-headlines h4 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.dnt-inputs {
+	margin: 50px 0 20px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.dnt-field {
+	display: flex;
+	width: 600px;
+	margin: 20px 0;
+}
+
+.dnt-field label {
+	font-family: 'Metropolis-Black', Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.3rem;
+	flex: 1;
+	background: linear-gradient(
+		to right,
+		#8b008b 0%,
+		#9400d3 25%,
+		#9932cc 50%,
+		#8a2be2 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	padding-top: 3px;
+}
+
+.dnt-field input {
+	flex: 2;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	font-size: 1.1rem;
+	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
+	padding: 5px 0 5px 10px;
+}
+
+.dnt-field .file {
+	width: 40px;
+	height: 40px;
+}
+
+.file input::-webkit-file-upload-button {
+	visibility: hidden;
+	text-align: center;
+}
+
+.file input[type='file'] {
+	padding-left: 25px;
+	color: #ffffff;
+	font-family: 'Metropolis-Bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.file input[type='file']:hover {
+	cursor: pointer;
+}
+
+.file {
+	flex: 2;
+	background: linear-gradient(
+		to right,
+		#8a2be2 0%,
+		#9400d3 25%,
+		#9932cc 50%,
+		#8b008b 100%
+	);
+	border-radius: 5px;
+	background-size: 200% auto;
+	transition: all 0.5s;
+}
+
+.file:hover {
+	background-position: right center;
+}
+
+.dnt-sorting-options {
+	margin: 0;
+	flex: 2;
+}
+
+.dnt-sorting-options select {
+	font-family: 'Metropolis-Medium', Georgia, 'Times New Roman', Times, serif;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	padding: 5px;
+	width: 400px;
+	text-align: center;
+}
+
+.dnt-submit {
+	display: flex;
+	justify-content: center;
+}
+
+.dnt-submit button {
+	font-family: 'Metropolis-Bold', Georgia, 'Times New Roman', Times, serif;
+	background: linear-gradient(
+		to right,
+		#8a2be2 0%,
+		#9400d3 25%,
+		#9932cc 50%,
+		#8b008b 100%
+	);
+	border: none;
+	border-radius: 5px;
+	background-size: 200% auto;
+	transition: all 0.5s;
+	color: #ffffff;
+	font-size: 1.2rem;
+	padding: 10px 100px;
+}
+
+.dnt-submit button:hover {
+	background-position: right center;
+	cursor: pointer;
+}

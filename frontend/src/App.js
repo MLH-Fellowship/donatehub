@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Homepage from './components/Homepage';
+import Donate from './components/Donate';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
 function App() {
+	const [items, setItems] = useState([
+		{
+			itemName: `Shoes`,
+			category: `shoes`,
+			address: `House #123, BB Block`,
+			contactNo: `123445677`,
+			picture: ``
+		}
+	]);
+
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<>
+			<Switch>
+				<Route
+					exact
+					path="/donate"
+					render={() => <Donate items={items} setItems={setItems} />}
+				/>
+				<Route
+					exact
+					path="/"
+					render={() => <Homepage data={items} />}
+				/>
+				<Redirect to="/" />
+			</Switch>
+		</>
 	);
 }
 
