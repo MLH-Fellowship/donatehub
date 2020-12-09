@@ -18,13 +18,18 @@ const Homepage = ({ data }) => {
 							<select>
 								<option value="date">Newest</option>
 								<option value="clothes">Clothes</option>
+								<option value="shoes">Shoes</option>
 								<option value="electronics">Electronic</option>
 							</select>
 						</div>
 					</div>
 					<div className="hmpg-sub-containers-cards">
 						{data.map(item => (
-							<ItemCard img={shoe} itemName={item.itemName} />
+							<ItemCard
+								key={() => Math.random() * 1000000}
+								img={shoe}
+								itemName={item.itemName}
+							/>
 						))}
 					</div>
 				</div>

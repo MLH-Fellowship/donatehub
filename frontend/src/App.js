@@ -8,34 +8,21 @@ function App() {
 	const [items, setItems] = useState([
 		{
 			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
-		},
-		{
-			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
-		},
-		{
-			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
-		},
-		{
-			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
-		},
-		{
-			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
-		},
-		{
-			itemName: `Shoes`,
-			itemPicture: `../images/shoe.png`
+			category: `shoes`,
+			address: `House #123, BB Block`,
+			contactNo: `123445677`,
+			picture: ``
 		}
 	]);
 
 	return (
 		<>
 			<Switch>
-				<Route exact path="/donate" render={() => <Donate />} />
+				<Route
+					exact
+					path="/donate"
+					render={() => <Donate items={items} setItems={setItems} />}
+				/>
 				<Route
 					exact
 					path="/"
